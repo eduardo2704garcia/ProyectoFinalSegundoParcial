@@ -1,12 +1,12 @@
 <div class="container">
 <header>
-    <img src="/images/logoicono.png" class="logo" >
+    <img src="/images/logoicono.png" routerLink="/" class="logo" >
     <nav>
-        <a routerLink="/home">Home</a>
-        <a routerLink="/about">About</a>
-        <a routerLink="/team">Team</a>
-        <a routerLink="/contact">Contact</a>
+        <a routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a routerLink="/about" routerLinkActive="activo">About</a>
+        <a routerLink="/team" routerLinkActive="activo">Team</a>
+        <a routerLink="/contact" routerLinkActive="activo">Contact</a>
     </nav>
-    <button class="btn-contact">Contáctanos</button>
+    <button class="btn-contact" routerLink="/contact">Contáctanos</button>
 </header>
 </div>

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DEVELOPERS } from '../../data/developers/developers';
 import { DevProfile } from '../../components/dev-profile/dev-profile';
 
+
 @Component({
   selector: 'app-team',
   standalone: true,

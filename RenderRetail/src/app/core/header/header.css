@@ -37,6 +37,7 @@ nav{
     align-items: center;
     gap: 3rem;
     margin-left: -5%;
+    z-index: 999;
 }
 
 nav a{
@@ -46,6 +47,10 @@ nav a{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+}
+
+nav a.activo{
+    color: var(--pink-color);
 }
 
 nav a:hover{
@@ -64,6 +69,8 @@ nav a:hover{
     cursor: pointer;
     z-index: 999;
 }
+
+
 
 .btn-contact:hover{
     background-color: var(--pink-color);
