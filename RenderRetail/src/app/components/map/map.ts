@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-map',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './map.html',
   styleUrl: './map.css'
 })

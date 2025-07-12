@@ -5,8 +5,9 @@ export interface Developer {
   technologies: string[];
   photo: string;
   github: string;
+  facebook: string;
+  instagram: string;
   linkedin: string;
-  twitter: string;
   cv: string;
   titles: string[];
 }
@@ -19,8 +20,9 @@ export const DEVELOPERS: Developer[] = [
     technologies: ["Angular", "HTML", "CSS", "TypeScript"],
     photo: "images/Eduardo.jpg",
     github: "#",
+    facebook: "#",
+    instagram: "#",
     linkedin: "#",
-    twitter: "#",
     cv: "#",
     titles: ["Desarrollador", "Estudiante", "GymRat"]
   },
@@ -31,8 +33,9 @@ export const DEVELOPERS: Developer[] = [
     technologies: ["Node.js", "Angular", "MongoDB", "Express"],
     photo: "images/Eduardo.jpg",
     github: "#",
+    facebook: "#",
+    instagram: "#",
     linkedin: "#",
-    twitter: "#",
     cv: "#",
     titles: ["Developer", "Designer", "Youtuber"]
   },
@@ -43,8 +46,9 @@ export const DEVELOPERS: Developer[] = [
     technologies: ["Java", "SQL", "NestJS"],
     photo: "images/Eduardo.jpg",
     github: "#",
+    facebook: "#",
+    instagram: "#",
     linkedin: "#",
-    twitter: "#",
     cv: "#",
     titles: ["Developer", "Designer", "Youtuber"]
   }

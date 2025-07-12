@@ -1,0 +1,39 @@
+.contact-form {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  padding: 2rem;
+  flex: 1 1 45%;
+}
+
+.contact-form h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.input, .textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: transparent;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+}
+
+.textarea {
+  height: 150px;
+  resize: none;
+}
+
+.btn-submit {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--white-color);
+  padding: 0.75rem;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: var(--pink-color);
+}

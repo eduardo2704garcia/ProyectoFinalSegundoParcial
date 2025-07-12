@@ -12,3 +12,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black-color); 
+  color: var(--white-color);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
