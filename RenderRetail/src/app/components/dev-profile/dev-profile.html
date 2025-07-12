@@ -1,1 +1,27 @@
-<p>dev-profile works!</p>
+<div class="profile-container" [class.reverse]="reverse">
+  <div class="profile-image" data-aos="fade-right">
+    <img [src]="developer.photo" [alt]="developer.name" />
+  </div>
+
+  <div class="profile-info" data-aos="fade-left">
+    <h2 class="hello">Hola, soy <span class="name">{{ developer.name }}</span></h2>
+
+    <h3 class="my-profession">
+      Soy <span #typedElement class="typing"></span>
+    </h3>
+
+    <p class="description">{{ developer.description }}</p>
+
+    <ul class="tech-list">
+      <li *ngFor="let tech of developer.technologies">{{ tech }}</li>
+    </ul>
+
+    <div class="social-icons">
+      <a [href]="developer.github" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a [href]="developer.linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a [href]="developer.twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+
+    <a [href]="developer.cv" target="_blank" class="cv-btn">Descargar CV</a>
+  </div>
+</div>

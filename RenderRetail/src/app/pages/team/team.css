@@ -1,0 +1,26 @@
+:root {
+  --black-color: #000000;
+  --purple-color: #9929EA;
+  --pink-color: #CC66DA;
+  --white-color: #F2F2F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.team-section {
+  background-color: var(--black-color);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}

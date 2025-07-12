@@ -1,1 +1,22 @@
-<p>team works!</p>
+<section class="team-section">
+  <app-dev-profile
+    [developer]="developers[0]"
+    [reverse]="false"
+    data-aos="fade-right"
+    data-aos-duration="1000">
+  </app-dev-profile>
+
+  <app-dev-profile
+    [developer]="developers[1]"
+    [reverse]="true"
+    data-aos="fade-left"
+    data-aos-duration="1000">
+  </app-dev-profile>
+
+  <app-dev-profile
+    [developer]="developers[2]"
+    [reverse]="false"
+    data-aos="fade-right"
+    data-aos-duration="1000">
+  </app-dev-profile>
+</section>

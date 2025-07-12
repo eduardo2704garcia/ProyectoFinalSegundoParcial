@@ -7,7 +7,7 @@ import { DevProfile } from '../../components/dev-profile/dev-profile';
 @Component({
   selector: 'app-team',
   standalone: true,
-  imports: [CommonModule, DEVELOPERS, DevProfile],
+  imports: [CommonModule, DevProfile],
   templateUrl: './team.html',
   styleUrl: './team.css'
 })
