@@ -4,9 +4,14 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-header',
   imports: [RouterModule],
+  standalone: true,
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
 export class Header {
+  isMenuOpen = false;
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

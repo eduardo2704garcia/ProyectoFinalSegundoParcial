@@ -11,5 +11,11 @@ import { RouterModule } from '@angular/router';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class Home {
+    showRobot = false;
 
+  ngOnInit() {
+    setTimeout(() => {
+      this.showRobot = true;
+    }, 1500);
+  }
 }

@@ -1,3 +1,4 @@
+
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--black-color);
@@ -142,4 +143,55 @@ main{
 }
 
 
+@media (max-width: 768px) {
 
+    .content{
+        margin-top: 25rem;
+    }
+
+    .robot-3d {
+        scale: 0.5;
+        top:-25%;
+        right: 0;
+    }
+
+    .content{
+        max-width: 30rem;
+        margin-left: 10%;
+    }
+
+    .tag-box{
+        width: 12rem;
+        top: 1rem;
+    }
+
+    .content h1{
+        font-size: 2.5rem;
+    }
+
+    .description{
+        font-size: 1rem;
+    }
+
+    .btn-get-started{
+        font-size: 0.8rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .btn-signing-main{
+        font-size: 0.8rem;
+        padding: 0.5rem 2rem;
+    }
+
+  .robot-3d {
+    position: absolute;
+    left: -30px;        /* centrar horizontalmente */
+    transform: translateX(-50%) scale(2); /* centrar y escalar */
+    width: 100vw;      /* que no se desborde */
+    zoom: 170%;
+    top: -200px;
+  }
+
+
+    
+}
