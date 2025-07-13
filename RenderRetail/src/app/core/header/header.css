@@ -42,7 +42,7 @@ nav{
 }
 
 nav a{
-    font-family: var(--font-body);
+    font-family: var(--font-header);
     font-size: 1rem;
     letter-spacing: 0.1rem;
     transition: color 0.2s ease;
