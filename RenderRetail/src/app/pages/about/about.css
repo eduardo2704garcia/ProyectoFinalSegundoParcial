@@ -1,0 +1,289 @@
+.about-section {
+    position: relative;
+    background-color: var(--black-color);
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - [altura-header] - [altura-footer]);
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, rgba(var(--purple-color), 0.1), transparent 50%), radial-gradient(circle at bottom right, rgba(var(--pink-color), 0.1), transparent 50%);
+    z-index: 0;
+    opacity: 0.7;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.section-title {
+    color: var(--purple-color);
+    font-size: 3.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.1rem;
+}
+
+.highlight {
+    color: var(--pink-color);
+}
+
+.intro-text {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(var(--purple-color), 0.15);
+    border: 1px solid var(--purple-color);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(var(--pink-color), 0.4);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(var(--white-color), 0.08);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease-out, height 0.4s ease-out;
+    z-index: 0;
+}
+
+.card:hover::before {
+    width: 300%;
+    height: 300%;
+}
+
+.card:hover {
+    transform: translateY(-1rem) scale(1.02);
+    box-shadow: 0 15px 40px rgba(var(--purple-color), 0.7);
+    border-color: var(--pink-color);
+}
+
+.card-title {
+    color: var(--pink-color);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.card-description {
+    color: var(--white-color);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.85;
+    position: relative;
+    z-index: 1;
+}
+
+.section-subtitle {
+    color: var(--purple-color);
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.value-item {
+    background-color: rgba(var(--pink-color), 0.1);
+    border: 1px solid var(--pink-color);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(var(--black-color), 0.4);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.value-item:hover {
+    background-color: rgba(var(--pink-color), 0.25);
+    transform: translateY(-0.6rem) scale(1.01);
+    box-shadow: 0 8px 25px rgba(var(--purple-color), 0.5);
+}
+
+.value-item h3 {
+    color: var(--purple-color);
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.value-item p {
+    color: var(--white-color);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cta-section {
+    margin-top: 4rem;
+}
+
+.cta-section p {
+    color: var(--white-color);
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--pink-color);
+    color: var(--white-color);
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid var(--pink-color);
+    box-shadow: 0 4px 15px rgba(var(--pink-color), 0.4);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border-color: var(--purple-color);
+    color: var(--purple-color);
+    transform: translateY(-0.3rem) scale(1.05);
+    box-shadow: 0 6px 20px rgba(var(--purple-color), 0.6);
+}
+
+@media (max-width: 1024px) {
+    .section-title {
+        font-size: 3.2rem;
+    }
+    .intro-text {
+        font-size: 1.3rem;
+    }
+    .section-subtitle {
+        font-size: 2.4rem;
+    }
+    .card {
+        padding: 2rem;
+    }
+    .card-title {
+        font-size: 2rem;
+    }
+    .card-description {
+        font-size: 1rem;
+    }
+    .value-item h3 {
+        font-size: 1.4rem;
+    }
+    .value-item p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 4rem 1.5rem;
+    }
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .intro-text {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+    .section-subtitle {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .values-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+    .card {
+        padding: 1.8rem;
+    }
+    .card-title {
+        font-size: 1.8rem;
+    }
+    .btn-primary {
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 3rem 1rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .intro-text {
+        font-size: 1rem;
+    }
+    .section-subtitle {
+        font-size: 1.8rem;
+    }
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        padding: 1.5rem;
+    }
+    .card-title {
+        font-size: 1.6rem;
+    }
+    .card-description {
+        font-size: 0.9rem;
+    }
+    .btn-primary {
+        font-size: 1rem;
+        padding: 0.7rem 1.8rem;
+    }
+}

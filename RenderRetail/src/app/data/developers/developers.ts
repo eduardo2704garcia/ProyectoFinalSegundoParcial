@@ -18,7 +18,7 @@ export const DEVELOPERS: Developer[] = [
     role: "Frontend Developer",
     description: "Apasionado por crear interfaces atractivas y responsivas usando Angular.",
     technologies: ["Angular", "HTML", "CSS", "TypeScript"],
-    photo: "images/Eduardo.jpg",
+    photo: "images/Mateo.jpg",
     github: "#",
     facebook: "#",
     instagram: "#",
