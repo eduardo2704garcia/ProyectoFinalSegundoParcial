@@ -41,14 +41,14 @@ export const DEVELOPERS: Developer[] = [
   },
   {
     name: "Gabriel",
-    role: "Backend Developer",
+    role: "Web Designer",
     description: "Optimiza rendimiento y estructura del servidor con tecnologías modernas.",
     technologies: ["Java", "SQL", "NestJS"],
-    photo: "images/Eduardo.jpg",
-    github: "#",
-    facebook: "#",
-    instagram: "#",
-    linkedin: "#",
+    photo: "images/Gabriel.jpg",
+    github: "https://github.com/Teo344",
+    facebook: "https://www.facebook.com/share/19a4zZLrqo/?mibextid=wwXIfr",
+    instagram: "https://www.instagram.com/gabriellcriollo?igsh=MWp2M2pwemRveDd6YQ%3D%3D&utm_source=qr",
+    linkedin: "https://www.linkedin.com/in/mateo-criollo-a0485626a",
     cv: "#",
     titles: ["Developer", "Designer", "Youtuber"]
   }
