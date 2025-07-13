@@ -1,10 +1,30 @@
 <div class="contact-form">
   <h1>Envíanos un mensaje</h1>
-  <form>
-    <input type="text" placeholder="Nombre completo" class="input" />
-    <input type="email" placeholder="Correo electrónico" class="input" />
-    <input type="text" placeholder="Asunto" class="input" />
-    <textarea placeholder="Mensaje" class="textarea"></textarea>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="name" placeholder="Nombre completo" class="input" />
+    <div *ngIf="submitted && f['name'].errors" class="error">
+      <small *ngIf="f['name'].errors['required']">El nombre es requerido.</small>
+    </div>
+
+    <input type="email" formControlName="email" placeholder="Correo electrónico" class="input" />
+    <div *ngIf="submitted && f['email'].errors" class="error">
+      <small *ngIf="f['email'].errors['required']">El correo es requerido.</small>
+      <small *ngIf="f['email'].errors['email']">Correo inválido.</small>
+    </div>
+
+    <input type="text" formControlName="subject" placeholder="Asunto" class="input" />
+    <div *ngIf="submitted && f['subject'].errors" class="error">
+      <small *ngIf="f['subject'].errors['required']">El asunto es requerido.</small>
+    </div>
+
+    <textarea formControlName="message" placeholder="Mensaje" class="textarea"></textarea>
+    <div *ngIf="submitted && f['message'].errors" class="error">
+      <small *ngIf="f['message'].errors['required']">El mensaje es requerido.</small>
+    </div>
+
     <button type="submit" class="btn-submit">ENVIAR</button>
   </form>
+
+  <p *ngIf="showSuccess" class="success-message">✅ ¡Mensaje enviado correctamente!</p>
 </div>
