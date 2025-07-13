@@ -10,6 +10,7 @@ footer{
     align-items: center;
     flex-direction: column;
     top: 120px;
+    font-family: var(--font-header);
 }
 
 footer .social_icon, footer .menu{
@@ -39,6 +40,7 @@ footer .social_icon li a:hover{
 }
 
  footer .menu li a{
+    font-family: var(--font-body);
     font-size: 1.2em;
     color: var(--white-color);
     margin: 0 10px;
@@ -57,6 +59,7 @@ footer .social_icon li a:hover{
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
+    font-family: var(--font-body);
     font-size: 1.1em;
  }
 
