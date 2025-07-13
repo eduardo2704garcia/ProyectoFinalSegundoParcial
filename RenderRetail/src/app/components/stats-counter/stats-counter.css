@@ -1,0 +1,107 @@
+/* src/app/components/stats-counter/stats-counter.component.css */
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgba(var(--purple-color), 0.08);
+    /* Fondo muy sutil */
+    border-radius: 10px;
+    border: 1px solid rgba(var(--purple-color), 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 180px;
+    /* Ancho mínimo para cada tarjeta */
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(var(--pink-color), 0.3);
+}
+
+.icon-container {
+    font-size: 3.5rem;
+    /* Tamaño de los iconos */
+    color: var(--pink-color);
+    /* Color de los iconos */
+    margin-bottom: 1rem;
+    line-height: 1;
+    /* Eliminar espacio extra */
+}
+
+.icon-container i {
+    /* Asegúrate de tener Font Awesome o similar en tu proyecto */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.stat-number {
+    font-size: 3.2rem;
+    /* Tamaño del número */
+    font-weight: 700;
+    color: var(--white-color);
+    /* Color blanco para el número */
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    /* Sombra para resaltar */
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: var(--white-color);
+    /* Color blanco para la etiqueta */
+    opacity: 0.8;
+    line-height: 1.4;
+}
+
+
+/* Media Queries para responsividad */
+
+@media (max-width: 1024px) {
+    .icon-container {
+        font-size: 3rem;
+    }
+    .stat-number {
+        font-size: 2.8rem;
+    }
+    .stat-label {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .stat-item {
+        padding: 1rem;
+        min-width: 150px;
+    }
+    .icon-container {
+        font-size: 2.8rem;
+    }
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    .stat-label {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-item {
+        padding: 0.8rem;
+        min-width: unset;
+        /* Quitar min-width en móviles pequeños */
+    }
+    .icon-container {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .stat-number {
+        font-size: 2.2rem;
+    }
+    .stat-label {
+        font-size: 0.85rem;
+    }
+}

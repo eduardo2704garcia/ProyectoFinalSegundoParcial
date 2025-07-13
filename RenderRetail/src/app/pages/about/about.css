@@ -28,13 +28,41 @@
     text-align: center;
 }
 
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.company-branding {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.company-logo {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+.company-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
 .section-title {
     color: var(--purple-color);
-    font-size: 3.8rem;
-    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
     font-weight: 800;
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
     letter-spacing: 0.1rem;
+    margin-bottom: 0;
 }
 
 .highlight {
@@ -43,7 +71,7 @@
 
 .intro-text {
     color: var(--white-color);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     max-width: 900px;
     margin: 0 auto 4rem auto;
@@ -53,19 +81,19 @@
 
 .mission-vision-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
     margin-bottom: 5rem;
 }
 
 .card {
     position: relative;
     overflow: hidden;
-    background-color: rgba(var(--purple-color), 0.15);
+    background-color: rgba(var(--purple-color), 0.1);
     border: 1px solid var(--purple-color);
     border-radius: 15px;
     padding: 2.5rem;
-    box-shadow: 0 10px 30px rgba(var(--pink-color), 0.4);
+    box-shadow: 0 8px 25px rgba(var(--pink-color), 0.3);
     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-align: left;
     display: flex;
@@ -80,7 +108,7 @@
     left: 50%;
     width: 0;
     height: 0;
-    background: rgba(var(--white-color), 0.08);
+    background: rgba(var(--white-color), 0.05);
     border-radius: 50%;
     transform: translate(-50%, -50%);
     transition: width 0.4s ease-out, height 0.4s ease-out;
@@ -93,14 +121,14 @@
 }
 
 .card:hover {
-    transform: translateY(-1rem) scale(1.02);
-    box-shadow: 0 15px 40px rgba(var(--purple-color), 0.7);
+    transform: translateY(-0.8rem) scale(1.01);
+    box-shadow: 0 12px 35px rgba(var(--purple-color), 0.5);
     border-color: var(--pink-color);
 }
 
 .card-title {
     color: var(--pink-color);
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
     font-weight: 700;
     position: relative;
@@ -109,34 +137,50 @@
 
 .card-description {
     color: var(--white-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.7;
     opacity: 0.85;
     position: relative;
     z-index: 1;
 }
 
+.stats-section {
+    padding: 4rem 0;
+    margin-bottom: 5rem;
+}
+
 .section-subtitle {
     color: var(--purple-color);
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     margin-bottom: 3rem;
     font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.values-section {
+    margin-bottom: 5rem;
+}
+
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
 }
 
 .value-item {
-    background-color: rgba(var(--pink-color), 0.1);
+    background-color: rgba(var(--pink-color), 0.08);
     border: 1px solid var(--pink-color);
     border-radius: 12px;
     padding: 2rem;
-    box-shadow: 0 4px 15px rgba(var(--black-color), 0.4);
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(var(--black-color), 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -144,21 +188,21 @@
 }
 
 .value-item:hover {
-    background-color: rgba(var(--pink-color), 0.25);
-    transform: translateY(-0.6rem) scale(1.01);
-    box-shadow: 0 8px 25px rgba(var(--purple-color), 0.5);
+    background-color: rgba(var(--pink-color), 0.2);
+    transform: translateY(-0.5rem) scale(1.01);
+    box-shadow: 0 6px 20px rgba(var(--purple-color), 0.4);
 }
 
 .value-item h3 {
     color: var(--purple-color);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 0.8rem;
     font-weight: 600;
 }
 
 .value-item p {
     color: var(--white-color);
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
 }
 
@@ -168,7 +212,7 @@
 
 .cta-section p {
     color: var(--white-color);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     font-weight: 400;
 }
@@ -180,7 +224,7 @@
     padding: 1rem 2.5rem;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid var(--pink-color);
@@ -192,18 +236,36 @@
     border-color: var(--purple-color);
     color: var(--purple-color);
     transform: translateY(-0.3rem) scale(1.05);
-    box-shadow: 0 6px 20px rgba(var(--purple-color), 0.6);
+    box-shadow: 0 6px 20px rgba(var(--purple-color), 0.5);
 }
 
 @media (max-width: 1024px) {
+    .header-wrapper {
+        margin-bottom: 2rem;
+    }
+    .company-branding {
+        gap: 1.5rem;
+    }
+    .company-logo {
+        max-width: 80px;
+    }
     .section-title {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
     .intro-text {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
-    .section-subtitle {
-        font-size: 2.4rem;
+    .mission-vision-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+    }
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+    .values-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
     }
     .card {
         padding: 2rem;
@@ -212,25 +274,34 @@
         font-size: 2rem;
     }
     .card-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     .value-item h3 {
         font-size: 1.4rem;
     }
     .value-item p {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 768px) {
-    .about-section {
-        padding: 4rem 1.5rem;
+    .header-wrapper {
+        margin-bottom: 1.5rem;
+    }
+    .company-branding {
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .company-logo {
+        max-width: 60px;
+        margin-bottom: 0;
     }
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     .intro-text {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 3rem;
     }
     .section-subtitle {
@@ -241,9 +312,13 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
     .values-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
     }
     .card {
         padding: 1.8rem;
@@ -253,37 +328,95 @@
     }
     .btn-primary {
         padding: 0.8rem 2rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .about-section {
-        padding: 3rem 1rem;
+    .company-branding {
+        flex-direction: column;
+    }
+    .company-logo {
+        max-width: 80px;
+        margin-bottom: 0.5rem;
     }
     .section-title {
         font-size: 2rem;
+        text-align: center;
     }
     .intro-text {
-        font-size: 1rem;
+        text-align: center;
     }
-    .section-subtitle {
-        font-size: 1.8rem;
+    .stats-grid {
+        grid-template-columns: 1fr;
     }
     .values-grid {
         grid-template-columns: 1fr;
     }
-    .card {
-        padding: 1.5rem;
+}
+
+.values-section {
+    margin-bottom: 5rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.value-item {
+    background-color: rgba(var(--pink-color), 0.08);
+    border: 1px solid var(--pink-color);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(var(--black-color), 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.value-item:hover {
+    background-color: rgba(var(--pink-color), 0.2);
+    transform: translateY(-0.5rem) scale(1.01);
+    box-shadow: 0 6px 20px rgba(var(--purple-color), 0.4);
+}
+
+.value-item h3 {
+    color: var(--purple-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.value-item p {
+    color: var(--white-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .values-grid {
+        gap: 1.5rem;
     }
-    .card-title {
-        font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        max-width: 600px;
     }
-    .card-description {
-        font-size: 0.9rem;
-    }
-    .btn-primary {
-        font-size: 1rem;
-        padding: 0.7rem 1.8rem;
+}
+
+@media (max-width: 480px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 300px;
     }
 }

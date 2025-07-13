@@ -19,9 +19,9 @@ export const DEVELOPERS: Developer[] = [
     description: "Apasionado por crear interfaces atractivas y responsivas usando Angular.",
     technologies: ["Angular", "HTML", "CSS", "TypeScript"],
     photo: "images/Mateo.jpg",
-    github: "#",
-    facebook: "#",
-    instagram: "#",
+    github: "https://github.com/MateoJa54",
+    facebook: "https://www.facebook.com/mateo.iza.1804",
+    instagram: "https://www.instagram.com/mateoizab/",
     linkedin: "#",
     cv: "#",
     titles: ["Desarrollador", "Estudiante", "GymRat"]
@@ -36,7 +36,7 @@ export const DEVELOPERS: Developer[] = [
     facebook: "https://www.facebook.com/profile.php?id=100089441550065",
     instagram: "https://www.instagram.com/edudgr.047/",
     linkedin: "https://www.linkedin.com/in/eduardo-garc%C3%ADa-6ba271179/",
-    cv: "#",
+    cv: "https://www.linkedin.com/in/mateo-iza-133344369/",
     titles: ["Developer", "Designer", "Youtuber"]
   },
   {

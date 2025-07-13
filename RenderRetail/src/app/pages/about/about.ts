@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { StatsCounter } from '../../components/stats-counter/stats-counter';
 
 interface CompanyInfo {
   intro: string;
@@ -12,7 +13,7 @@ interface CompanyInfo {
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, StatsCounter],
   templateUrl: './about.html',
   styleUrls: ['./about.css']
 })

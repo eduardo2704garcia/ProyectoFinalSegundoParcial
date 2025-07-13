@@ -1,9 +1,16 @@
 <section class="about-section">
     <div class="background-overlay"></div>
     <div class="container">
-        <h1 class="section-title" data-aos="fade-down" data-aos-duration="1000">
-            Sobre <span class="highlight">Render Retail</span>
-        </h1>
+        <div class="header-wrapper" data-aos="fade-down" data-aos-duration="1000">
+            <div class="company-branding">
+                <h1 class="section-title">
+                    Sobre <span class="highlight">Render Retail</span>
+                </h1>
+            </div>
+        </div>
+        <p class="intro-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            {{ companyInfo().intro }}
+        </p>
         <p class="intro-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             {{ companyInfo().intro }}
         </p>
@@ -19,6 +26,17 @@
             </div>
         </div>
 
+        <div class="stats-section">
+            <h2 class="section-subtitle" data-aos="fade-up" data-aos-duration="1000">
+                Nuestros <span class="highlight">Logros</span> en Cifras
+            </h2>
+            <div class="stats-grid">
+                <app-stats-counter [targetNumber]="15" label="Años de Experiencia" iconClass="fas fa-history" suffix="+" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100"></app-stats-counter>
+                <app-stats-counter [targetNumber]="250" label="Proyectos Realizados" iconClass="fas fa-laptop-code" suffix="+" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200"></app-stats-counter>
+                <app-stats-counter [targetNumber]="180" label="Clientes Satisfechos" iconClass="fas fa-users" suffix="+" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></app-stats-counter>
+                <app-stats-counter [targetNumber]="95" label="Tasa de Retención" iconClass="fas fa-handshake" suffix="%" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400"></app-stats-counter>
+            </div>
+        </div>
         <div class="values-section">
             <h2 class="section-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
                 Nuestros <span class="highlight">Valores</span>
@@ -33,7 +51,7 @@
 
         <div class="cta-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
             <p>¿Listo para innovar tu negocio minorista con nosotros?</p>
-            <a routerLink="/contacto" class="btn-primary">¡Contáctanos Hoy!</a>
+            <a routerLink="/contact" class="btn-primary">¡Contáctanos Hoy!</a>
         </div>
     </div>
 </section>
