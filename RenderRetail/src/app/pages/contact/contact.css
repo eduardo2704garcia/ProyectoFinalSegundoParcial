@@ -33,7 +33,6 @@
   align-items: center;
 }
 
-/* ✅ Solo el ícono con fondo negro y hover morado */
 .contact-info h2 i {
   margin-right: 0.5rem;
   background-color: var(--black-color);
@@ -44,7 +43,7 @@
 }
 
 .contact-info h2 i:hover {
-  background-color: var(--purple-color); /* hover morado solo al ícono */
+  background-color: var(--purple-color);
   transform: scale(1.1);
 }
 

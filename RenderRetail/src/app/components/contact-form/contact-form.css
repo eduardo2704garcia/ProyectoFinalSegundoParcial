@@ -10,13 +10,17 @@
   margin-bottom: 1rem;
 }
 
-.input, .textarea {
+
+.input,
+.textarea {
   width: 100%;
   margin-bottom: 1rem;
   padding: 0.75rem;
   background: transparent;
-  border: 1px solid var(--white-color);
+  border: 2px solid var(--black-color); 
   color: var(--white-color);
+  border-radius: 8px;
+  font-size: 0.95rem;
 }
 
 .textarea {
@@ -24,16 +28,25 @@
   resize: none;
 }
 
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--white-color);
+  opacity: 0.8;
+}
+
 .btn-submit {
   width: 100%;
   background: transparent;
-  border: 1px solid var(--white-color);
+  border: 2px solid var(--black-color);
   padding: 0.75rem;
   color: var(--white-color);
+  border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-weight: 500;
 }
 
 .btn-submit:hover {
   background: var(--pink-color);
+  color: var(--white-color);
 }
