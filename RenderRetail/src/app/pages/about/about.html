@@ -1,39 +1,79 @@
 <section class="about-section">
-    <div class="background-overlay"></div>
-    <div class="container">
-        <h1 class="section-title" data-aos="fade-down" data-aos-duration="1000">
-            Sobre <span class="highlight">Render Retail</span>
-        </h1>
-        <p class="intro-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            {{ companyInfo().intro }}
-        </p>
-
-        <div class="mission-vision-grid">
-            <div class="card mission-card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
-                <h2 class="card-title">{{ companyInfo().mission.title }}</h2>
-                <p class="card-description">{{ companyInfo().mission.description }}</p>
-            </div>
-            <div class="card vision-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
-                <h2 class="card-title">{{ companyInfo().vision.title }}</h2>
-                <p class="card-description">{{ companyInfo().vision.description }}</p>
-            </div>
-        </div>
-
-        <div class="values-section">
-            <h2 class="section-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-                Nuestros <span class="highlight">Valores</span>
-            </h2>
-            <div class="values-grid">
-                <div class="value-item" *ngFor="let value of companyInfo().values; let i = index" data-aos="zoom-in" data-aos-duration="1000" [attr.data-aos-delay]="900 + (i * 100)">
-                    <h3>{{ value.name }}</h3>
-                    <p>{{ value.description }}</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="cta-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
-            <p>¿Listo para innovar tu negocio minorista con nosotros?</p>
-            <a routerLink="/contact" class="btn-primary">¡Contáctanos Hoy!</a>
-        </div>
+  <div class="background-overlay"></div>
+  <div class="container">
+    <div class="header-content" data-aos="fade-down" data-aos-duration="1000">
+      <div class="company-logo">
+        <img src="images/logoabout.jpg" alt="Render Retail Logo"> </div>
+      <h1 class="section-title">
+        Sobre <span class="highlight">Render Retail</span>
+      </h1>
     </div>
+    <p class="intro-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      {{ companyInfo().intro }}
+    </p>
+
+    <div class="mission-vision-grid">
+      <div class="card mission-card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+        <h2 class="card-title">{{ companyInfo().mission.title }}</h2>
+        <p class="card-description">{{ companyInfo().mission.description }}</p>
+      </div>
+      <div class="card vision-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+        <h2 class="card-title">{{ companyInfo().vision.title }}</h2>
+        <p class="card-description">{{ companyInfo().vision.description }}</p>
+      </div>
+    </div>
+
+    <div class="stats-section">
+      <h2 class="section-subtitle" data-aos="fade-up" data-aos-duration="1000">
+        Nuestros <span class="highlight">Logros</span> en Cifras
+      </h2>
+      <div class="stats-grid">
+        <app-stats-counter
+          [targetNumber]="15"
+          label="Años de Experiencia"
+          iconClass="fas fa-history"
+          suffix="+"
+          data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100"
+        ></app-stats-counter>
+        <app-stats-counter
+          [targetNumber]="250"
+          label="Proyectos Realizados"
+          iconClass="fas fa-laptop-code"
+          suffix="+"
+          data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200"
+        ></app-stats-counter>
+        <app-stats-counter
+          [targetNumber]="180"
+          label="Clientes Satisfechos"
+          iconClass="fas fa-users"
+          suffix="+"
+          data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"
+        ></app-stats-counter>
+        <app-stats-counter
+          [targetNumber]="95"
+          label="Tasa de Retención"
+          iconClass="fas fa-handshake"
+          suffix="%"
+          data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400"
+        ></app-stats-counter>
+      </div>
+    </div>
+    <div class="values-section">
+      <h2 class="section-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+        Nuestros <span class="highlight">Valores</span>
+      </h2>
+      <div class="values-grid">
+        <div class="value-item" *ngFor="let value of companyInfo().values; let i = index"
+             data-aos="zoom-in" data-aos-duration="1000" [attr.data-aos-delay]="900 + (i * 100)">
+          <h3>{{ value.name }}</h3>
+          <p>{{ value.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+      <p>¿Listo para innovar tu negocio minorista con nosotros?</p>
+      <a routerLink="/contact" class="btn-primary">¡Contáctanos Hoy!</a>
+    </div>
+  </div>
 </section>

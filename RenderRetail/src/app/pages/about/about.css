@@ -430,3 +430,61 @@
         max-width: 300px;
     }
 }
+
+/* src/app/components/quienes-somos/quienes-somos.component.css */
+
+/* ... (tus estilos existentes) ... */
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem; /* Ajusta el margen si es necesario */
+}
+
+.company-logo {
+  margin-bottom: 1rem; /* Espacio entre el logo y el título */
+  max-width: 150px; /* Tamaño máximo del logo. Ajusta según sea necesario */
+  height: auto;
+  display: flex; /* Para centrar la imagen dentro del div */
+  justify-content: center;
+  align-items: center;
+  /* Puedes añadir una sombra sutil o un borde si quieres que destaque más */
+  /* box-shadow: 0 0 15px rgba(var(--pink-color), 0.3); */
+  /* border-radius: 50%; /* Si quieres que el logo sea circular */
+}
+
+.company-logo img {
+  width: 100%;
+  height: auto;
+  display: block; /* Elimina espacio extra debajo de la imagen */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin cortarse */
+  border-radius: 47%;
+}
+
+
+.section-title {
+  /* ... (estilos existentes para section-title) ... */
+  margin-bottom: 0; /* Asegura que no haya margen extra si el logo ya tiene uno */
+}
+
+
+/* ... (resto de tus estilos existentes, incluyendo el de .stats-section) ... */
+
+
+/* Media Queries para responsividad (asegurando que el logo también se adapte) */
+@media (max-width: 768px) {
+  .company-logo {
+    max-width: 120px; /* Un poco más pequeño en tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .company-logo {
+    max-width: 90px; /* Aún más pequeño en móviles */
+    margin-bottom: 0.5rem;
+  }
+  .section-title {
+    font-size: 2rem; /* Asegura que el título se vea bien con el logo */
+  }
+}
