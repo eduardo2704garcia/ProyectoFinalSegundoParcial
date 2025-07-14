@@ -14,7 +14,7 @@ export interface Developer {
 
 export const DEVELOPERS: Developer[] = [
   {
-    name: "Mateo",
+    name: "Mateo Iza",
     role: "Frontend Developer",
     description: "Apasionado por crear interfaces atractivas y responsivas usando Angular.",
     technologies: ["Angular", "HTML", "CSS", "TypeScript"],
@@ -27,7 +27,7 @@ export const DEVELOPERS: Developer[] = [
     titles: ["Desarrollador", "Estudiante", "GymRat"]
   },
   {
-    name: "Eduardo",
+    name: "Eduardo García",
     role: "Frontend and Backend Developer",
     description: "Combina experiencia backend y frontend para construir soluciones completas.",
     technologies: ["Node.js", "Angular", "MongoDB", "Express"],
@@ -37,10 +37,10 @@ export const DEVELOPERS: Developer[] = [
     instagram: "https://www.instagram.com/edudgr.047/",
     linkedin: "https://www.linkedin.com/in/eduardo-garc%C3%ADa-6ba271179/",
     cv: "https://www.linkedin.com/in/mateo-iza-133344369/",
-    titles: ["Developer", "Designer", "Youtuber"]
+    titles: ["Estudiante", "Desarrollador Junior", "Deportista"]
   },
   {
-    name: "Gabriel",
+    name: "Gabriel Criollo",
     role: "Web Designer",
     description: "Optimiza rendimiento y estructura del servidor con tecnologías modernas.",
     technologies: ["Java", "SQL", "NestJS"],
@@ -50,6 +50,6 @@ export const DEVELOPERS: Developer[] = [
     instagram: "https://www.instagram.com/gabriellcriollo?igsh=MWp2M2pwemRveDd6YQ%3D%3D&utm_source=qr",
     linkedin: "https://www.linkedin.com/in/mateo-criollo-a0485626a",
     cv: "#",
-    titles: ["Developer", "Designer", "Youtuber"]
+    titles: ["Desarrollador", "Estudiante", "Creador de Contenido"]
   }
 ];
