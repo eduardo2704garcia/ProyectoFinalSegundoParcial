@@ -51,5 +51,18 @@ export const DEVELOPERS: Developer[] = [
     linkedin: "https://www.linkedin.com/in/mateo-criollo-a0485626a",
     cv: "#",
     titles: ["Desarrollador", "Estudiante", "Creador de Contenido"]
+  },
+    {
+    name: "Stefy Díaz",
+    role: "Frontend Developer",
+    description: "Desarrollo global con estilos personalizados y adaptativos.",
+    technologies: ["HTML5", "CSS3", "NestJS", "JavaScript"],
+    photo: "images/stefy.jpg",
+    github: "https://github.com/Teo344",
+    facebook: "https://www.facebook.com/share/19a4zZLrqo/?mibextid=wwXIfr",
+    instagram: "https://www.instagram.com/gabriellcriollo?igsh=MWp2M2pwemRveDd6YQ%3D%3D&utm_source=qr",
+    linkedin: "https://www.linkedin.com/in/mateo-criollo-a0485626a",
+    cv: "#",
+    titles: ["Desarrolladora", "Estudiante", "TikToker"]
   }
 ];
